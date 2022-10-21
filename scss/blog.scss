@@ -1,0 +1,109 @@
+.blog{
+    height: 1150px;
+    width: 981px;
+    margin: 0 auto;
+    // background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .blogContainer{
+        width: 861px;
+        height: 900px;
+        // background-color: bisque;
+        margin: 0 auto;
+        margin-top: 80px;
+        // margin-top: 100px;
+        .blogTitle{
+            width: 390px;
+            height: 40px;
+            right: 765px;
+            border-bottom: 2px solid black;
+            display: flex;
+            align-items: flex-end;
+            // margin-left: 60px;
+            line-height: 30px;
+            .titleWords{
+                height: 40px;
+                width: 390px;
+                font-size: 25px;
+                font-family: GillSans;
+            }
+        }
+        .postContainer{
+            display: flex;
+            flex-wrap: wrap;
+            .blog-post{
+                height:240px;
+                width: 430px;
+                // background-color:antiquewhite;
+                display: flex;
+                align-items: center;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                .date-container{
+                    height: 240px;
+                    width: 81px;
+                    // background-color: aquamarine;
+                    .date-box{
+                        height:60px;
+                        width: 60px;
+                        background-color: #EE4367;
+                        .date-day{
+                            color: white;
+                            text-align: center;
+                            font-weight: bold;
+                            font-family: GillSans;
+                            font-size: 22px;
+                            padding-top: 10px;
+                            // background-color: black;
+                        }
+                        .date-month{
+                            color: white;
+                            text-align: center;
+                            font-size: 12px;
+                            font-family: GillSans;
+                            // background-color: cadetblue;
+                        }
+                    }
+                }
+                .content-container{
+                    height: 240px;
+                    width: 800px;
+                    margin-left: 10px;
+                    // background-color: beige;
+                    .post-image{
+                        height:120px;
+                        width: 320px;
+                        background-image: url(../images/blog.jpg);
+                        background-repeat: no-repeat;
+                        background-position:center;
+                        background-size: cover;
+                    }
+                    .post-title{
+                        height: 55px;
+                        width: 800px;
+                        // background-color: aquamarine;
+                        display: flex;
+                        align-items: flex-end;
+                        p{
+                            font-size: 15px;
+                            font-family: GillSans;
+                        }
+                    }
+                    .post-content{
+                        height: 70px;
+                        width: 330px;
+                        // background-color: aqua;
+                        p{
+                            width: 330px;
+                            font-size: 13px;
+                            font-family: GillSans;
+                            color:#EE4367;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

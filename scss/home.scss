@@ -1,0 +1,191 @@
+.home {
+    .hero {
+    height:500px;
+    width: 1280;
+    background-image: linear-gradient(rgba(255,209,64,.8),rgba(255,209,64,.8)),url(../images/home-hero.jpg);
+    // background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        .callout-container{
+            height: 275px;
+            width: 800px;
+            // background-color: antiquewhite;
+            .callout{
+                width: 326px;
+                height:60px;
+                margin: 0 auto;
+                padding-top: 40px;
+                padding-bottom: 60px;
+                // background-color: black;
+                color: white;
+                font-size: 40px;
+                font-family: PTS_R;
+
+            }
+            .extraText{
+                width: 416px;
+                margin: 0 auto;
+                padding-bottom: 60px;
+                // background-color:brown;
+                color: white;
+                font-size: 20px;
+                font-family: PTS_I;
+                text-align: center;
+                color: #EE4367;
+            }
+            .description{
+                width: 416px;
+                height:46px;
+                margin: 0 auto;
+                padding-bottom: 90px;
+                // background-color: black;
+                color: white;
+                font-size: 20px;
+                font-family: GillSans;
+                text-align: center;
+            }
+            .read-more {
+                width: 121px;
+                height: 40px;
+                padding: 5px 15px;
+                margin: 0 auto;
+                background-color: #EE4367;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .read-more-text{
+                    width: 118px;
+                    // background-color: aliceblue;
+                    text-align: center;
+                    color: white;
+                    font-size: 15px;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                }
+            }
+        }  
+    }
+    .homeDescription{
+        height:300px;
+        width: 1280;
+        // background-color: antiquewhite;
+        .textBox{
+            height: 170px;
+            // background-color: aqua;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            .textContent{
+                height: 90px;
+                width: 789px;
+                color: #FFD140;
+                font-size: 15px;
+                font-family: PTS_I;
+            }
+        }
+        .name{
+            color: #EE4367;
+            font-size: 15px;
+            font-family: PTS_R;
+            margin-left: 155px;
+            margin-top: 10px;
+
+        }
+        .nameTitle{
+            color: #A8A8A8;
+            font-size: 10px;
+            font-family: PTS_R;
+            margin-left: 155px;
+        }
+    }
+    .upcomingEvents{
+        height:300px;
+        background-color: #540D6E;
+        .eventsTitle{
+            width: 390px;
+            height: 70px;
+            // background-color: black;
+            color: white;
+            font-size: 25px;
+            font-family: GillSans;
+            border-bottom: 1px solid white;
+            display: flex;
+            align-items: flex-end;
+            margin-left: 40px;
+            // justify-content: center;
+            .title{
+                color: white;
+                font-size: 25px;
+                font-family: GillSans;
+                margin-top: 200px;
+            }
+        }
+        .eventsBox{
+            height: 125px;
+            width: 1020px;
+            // background-color: aliceblue;
+            margin-top: 50px;
+            margin-left: 10PX;
+            display: flex;
+            .event{
+                height: 125px;
+                width:220px;
+                // background-color:darkgoldenrod;
+                display: flex;
+                .date-container{
+                    height: 124px;
+                    width: 81px;
+                    // background-color: aquamarine;
+                    .date-box{
+                        height:60px;
+                        width: 60px;
+                        background-color: #EE4367;
+                        .date-day{
+                            color: white;
+                            text-align: center;
+                            font-weight: bold;
+                            font-family: GillSans;
+                            font-size: 22px;
+                            padding-top: 10px;
+                            // background-color: black;
+                        }
+                        .date-month{
+                            color: white;
+                            text-align: center;
+                            font-size: 12px;
+                            font-family: GillSans;
+                            // background-color: cadetblue;
+                        }
+                    }
+                }
+                .textContainer{
+                    width:174px;
+                    height:125px;
+                    // background-color: aqua;
+                    .whiteText{
+                        height: 48px;
+                        width: 133px;
+                        // background-color:blueviolet;
+                        font-family: GillSans;
+                        color: white;
+                        font-size: 15px;
+
+                    }
+                    .pinkText{
+                        height: 77px;
+                        width: 133px;
+                        // background-color:brown;
+                        font-family: GillSans;
+                        color: #EE4367;
+                        font-size: 13px;
+                    }
+                }
+
+            }
+        }
+
+    }
+}

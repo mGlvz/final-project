@@ -1,0 +1,1327 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px;
+}
+
+.site-container {
+  max-width: 1100px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: GillSans;
+  src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+  font-family: PTS_B;
+  src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+  font-family: PTS_BI;
+  src: url(../css/fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+  font-family: PTS_I;
+  src: url(../css/fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+  font-family: PTS_R;
+  src: url(../css/fonts/PTSerif-Regular.ttf);
+}
+nav {
+  position: fixed;
+  height: 90px;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: white;
+}
+nav .logo {
+  width: 92px;
+  height: 42px;
+  color: white;
+  font-family: GillSans;
+  background-image: url(../images/logo/logo-white.png);
+}
+nav .links {
+  height: 42px;
+  width: 400px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav .links .line {
+  color: #EE4367;
+  font-size: 25px;
+}
+nav .links a {
+  color: white;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+  font-family: GillSans;
+  font-size: 15px;
+}
+
+.dark {
+  position: fixed;
+  height: 90px;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 2px solid;
+  border-color: black;
+}
+.dark .logo {
+  width: 92px;
+  height: 42px;
+  font-family: GillSans;
+  background-image: url(../images/logo/logo-black.png);
+}
+.dark .links {
+  height: 42px;
+  width: 400px;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+.dark .links .line {
+  color: #EE4367;
+  font-size: 25px;
+}
+.dark .links a {
+  color: black;
+  padding-right: 5px;
+  padding-left: 5px;
+  text-decoration: none;
+  font-family: GillSans;
+  font-size: 15px;
+}
+
+.home .hero {
+  height: 500px;
+  width: 1280;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/home-hero.jpg);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/home-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .hero .callout-container {
+  height: 275px;
+  width: 800px;
+}
+.home .hero .callout-container .callout {
+  width: 326px;
+  height: 60px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 40px;
+  font-family: PTS_R;
+}
+.home .hero .callout-container .extraText {
+  width: 416px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  color: white;
+  font-size: 20px;
+  font-family: PTS_I;
+  text-align: center;
+  color: #EE4367;
+}
+.home .hero .callout-container .description {
+  width: 416px;
+  height: 46px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+  color: white;
+  font-size: 20px;
+  font-family: GillSans;
+  text-align: center;
+}
+.home .hero .callout-container .read-more {
+  width: 121px;
+  height: 40px;
+  padding: 5px 15px;
+  margin: 0 auto;
+  background-color: #EE4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .hero .callout-container .read-more .read-more-text {
+  width: 118px;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.home .homeDescription {
+  height: 300px;
+  width: 1280;
+}
+.home .homeDescription .textBox {
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.home .homeDescription .textBox .textContent {
+  height: 90px;
+  width: 789px;
+  color: #FFD140;
+  font-size: 15px;
+  font-family: PTS_I;
+}
+.home .homeDescription .name {
+  color: #EE4367;
+  font-size: 15px;
+  font-family: PTS_R;
+  margin-left: 155px;
+  margin-top: 10px;
+}
+.home .homeDescription .nameTitle {
+  color: #A8A8A8;
+  font-size: 10px;
+  font-family: PTS_R;
+  margin-left: 155px;
+}
+.home .upcomingEvents {
+  height: 300px;
+  background-color: #540D6E;
+}
+.home .upcomingEvents .eventsTitle {
+  width: 390px;
+  height: 70px;
+  color: white;
+  font-size: 25px;
+  font-family: GillSans;
+  border-bottom: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 40px;
+}
+.home .upcomingEvents .eventsTitle .title {
+  color: white;
+  font-size: 25px;
+  font-family: GillSans;
+  margin-top: 200px;
+}
+.home .upcomingEvents .eventsBox {
+  height: 125px;
+  width: 1020px;
+  margin-top: 50px;
+  margin-left: 10PX;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .upcomingEvents .eventsBox .event {
+  height: 125px;
+  width: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.home .upcomingEvents .eventsBox .event .date-container {
+  height: 124px;
+  width: 81px;
+}
+.home .upcomingEvents .eventsBox .event .date-container .date-box {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+}
+.home .upcomingEvents .eventsBox .event .date-container .date-box .date-day {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: GillSans;
+  font-size: 22px;
+  padding-top: 10px;
+}
+.home .upcomingEvents .eventsBox .event .date-container .date-box .date-month {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: GillSans;
+}
+.home .upcomingEvents .eventsBox .event .textContainer {
+  width: 174px;
+  height: 125px;
+}
+.home .upcomingEvents .eventsBox .event .textContainer .whiteText {
+  height: 48px;
+  width: 133px;
+  font-family: GillSans;
+  color: white;
+  font-size: 15px;
+}
+.home .upcomingEvents .eventsBox .event .textContainer .pinkText {
+  height: 77px;
+  width: 133px;
+  font-family: GillSans;
+  color: #EE4367;
+  font-size: 13px;
+}
+
+.about .about-hero {
+  height: 600px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.8)), to(rgba(255, 209, 64, 0.8))), url(../images/about.jpg);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.8), rgba(255, 209, 64, 0.8)), url(../images/about.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about .aboutTitle {
+  position: absolute;
+  width: 390px;
+  height: 40px;
+  top: 507px;
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 60px;
+  line-height: 30px;
+}
+.about .aboutTitle .titleWords {
+  height: 40px;
+  width: 390px;
+  font-size: 25px;
+  font-family: GillSans;
+}
+.about .aboutContainer {
+  height: 180px;
+}
+.about .aboutContainer .aboutText {
+  width: 980px;
+  height: 69px;
+  margin: 0 auto;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.gallery {
+  height: 750px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery .galleryContainer {
+  width: 981px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery .galleryContainer .galleryTitle {
+  width: 390px;
+  height: 40px;
+  right: 765px;
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 60px;
+  line-height: 30px;
+}
+.gallery .galleryContainer .galleryTitle .titleWords {
+  height: 40px;
+  width: 390px;
+  font-size: 25px;
+  font-family: GillSans;
+}
+.gallery .galleryContainer .row-one {
+  height: 187px;
+  width: 860px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery .galleryContainer .row-one .pic1 {
+  width: 370px;
+  background-color: aqua;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.7)), to(rgba(255, 209, 64, 0.7))), url(/images/gallery/1.png);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(/images/gallery/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery .galleryContainer .row-one .pic2 {
+  width: 200px;
+  background-color: crimson;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.7)), to(rgba(238, 67, 103, 0.7))), url(/images/gallery/2.jpeg);
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(/images/gallery/2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery .galleryContainer .row-one .pic3 {
+  width: 250px;
+  background-color: chocolate;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.7)), to(rgba(8, 173, 105, 0.7))), url(/images/gallery/3.jpg);
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(/images/gallery/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery .galleryContainer .row-two {
+  height: 306px;
+  width: 860px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.gallery .galleryContainer .row-two .pic4 {
+  width: 500px;
+  background-color: blueviolet;
+  margin-right: 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.7)), to(rgba(84, 13, 110, 0.7))), url(/images/gallery/4.jpg);
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(/images/gallery/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gallery .galleryContainer .row-two .pic5 {
+  width: 340px;
+  background-color: aquamarine;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.7)), to(rgba(59, 206, 171, 0.7))), url(/images/gallery/5.png);
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(/images/gallery/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery1 .about-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery1 .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 209, 64, 0.7)), to(rgba(255, 209, 64, 0.7))), url(../images/gallery/1.png);
+  background-image: linear-gradient(rgba(255, 209, 64, 0.7), rgba(255, 209, 64, 0.7)), url(../images/gallery/1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 170px;
+}
+.gallery1 .galleryTitle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  top: 250px;
+  right: 311px;
+}
+.gallery1 .galleryTitle .titleNumber {
+  width: 215px;
+  height: 275px;
+  font-size: 300px;
+  font-family: GillSans;
+  color: #FFD140;
+}
+.gallery1 .galleryTitle .titleWords {
+  height: 130px;
+  width: 684px;
+  font-size: 140px;
+  font-family: GillSans;
+  color: #FFD140;
+}
+.gallery1 .aboutContainer {
+  height: 200px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery1 .aboutContainer .aboutText {
+  width: 460px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.gallery1 .aboutContainer .aboutText2 {
+  width: 450px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.gallery2 .about-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery2 .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.7)), to(rgba(238, 67, 103, 0.7))), url(../images/gallery/2.jpeg);
+  background-image: linear-gradient(rgba(238, 67, 103, 0.7), rgba(238, 67, 103, 0.7)), url(../images/gallery/2.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 170px;
+}
+.gallery2 .galleryTitle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  top: 250px;
+  right: 311px;
+}
+.gallery2 .galleryTitle .titleNumber {
+  width: 215px;
+  height: 275px;
+  font-size: 300px;
+  font-family: GillSans;
+  color: #EE4367;
+}
+.gallery2 .galleryTitle .titleWords {
+  height: 130px;
+  width: 684px;
+  font-size: 140px;
+  font-family: GillSans;
+  color: #EE4367;
+}
+.gallery2 .aboutContainer {
+  height: 200px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery2 .aboutContainer .aboutText {
+  width: 460px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.gallery2 .aboutContainer .aboutText2 {
+  width: 450px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.gallery3 .about-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery3 .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(8, 173, 105, 0.7)), to(rgba(8, 173, 105, 0.7))), url(../images/gallery/3.jpg);
+  background-image: linear-gradient(rgba(8, 173, 105, 0.7), rgba(8, 173, 105, 0.7)), url(../images/gallery/3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 170px;
+}
+.gallery3 .galleryTitle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  top: 250px;
+  right: 311px;
+}
+.gallery3 .galleryTitle .titleNumber {
+  width: 215px;
+  height: 275px;
+  font-size: 300px;
+  font-family: GillSans;
+  color: #08AD69;
+}
+.gallery3 .galleryTitle .titleWords {
+  height: 130px;
+  width: 684px;
+  font-size: 140px;
+  font-family: GillSans;
+  color: #08AD69;
+}
+.gallery3 .aboutContainer {
+  height: 200px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery3 .aboutContainer .aboutText {
+  width: 460px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.gallery3 .aboutContainer .aboutText2 {
+  width: 450px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.gallery4 .about-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery4 .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(84, 13, 110, 0.7)), to(rgba(84, 13, 110, 0.7))), url(../images/gallery/4.jpg);
+  background-image: linear-gradient(rgba(84, 13, 110, 0.7), rgba(84, 13, 110, 0.7)), url(../images/gallery/4.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 170px;
+}
+.gallery4 .galleryTitle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  top: 250px;
+  right: 311px;
+}
+.gallery4 .galleryTitle .titleNumber {
+  width: 215px;
+  height: 275px;
+  font-size: 300px;
+  font-family: GillSans;
+  color: #540D6E;
+}
+.gallery4 .galleryTitle .titleWords {
+  height: 110px;
+  width: 684px;
+  font-size: 115px;
+  font-family: GillSans;
+  color: #540D6E;
+}
+.gallery4 .aboutContainer {
+  height: 200px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery4 .aboutContainer .aboutText {
+  width: 460px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.gallery4 .aboutContainer .aboutText2 {
+  width: 450px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.gallery5 .about-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.gallery5 .about-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 380px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(59, 206, 171, 0.7)), to(rgba(59, 206, 171, 0.7))), url(../images/gallery/5.png);
+  background-image: linear-gradient(rgba(59, 206, 171, 0.7), rgba(59, 206, 171, 0.7)), url(../images/gallery/5.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-top: 170px;
+}
+.gallery5 .galleryTitle {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  top: 250px;
+  right: 311px;
+}
+.gallery5 .galleryTitle .titleNumber {
+  width: 215px;
+  height: 275px;
+  font-size: 300px;
+  font-family: GillSans;
+  color: #3BCEAB;
+}
+.gallery5 .galleryTitle .titleWords {
+  height: 130px;
+  width: 684px;
+  font-size: 140px;
+  font-family: GillSans;
+  color: #3BCEAB;
+}
+.gallery5 .aboutContainer {
+  height: 200px;
+  width: 981px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.gallery5 .aboutContainer .aboutText {
+  width: 460px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.gallery5 .aboutContainer .aboutText2 {
+  width: 450px;
+  height: 69px;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.blog {
+  height: 1150px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blog .blogContainer {
+  width: 861px;
+  height: 900px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+.blog .blogContainer .blogTitle {
+  width: 390px;
+  height: 40px;
+  right: 765px;
+  border-bottom: 2px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  line-height: 30px;
+}
+.blog .blogContainer .blogTitle .titleWords {
+  height: 40px;
+  width: 390px;
+  font-size: 25px;
+  font-family: GillSans;
+}
+.blog .blogContainer .postContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.blog .blogContainer .postContainer .blog-post {
+  height: 240px;
+  width: 430px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.blog .blogContainer .postContainer .blog-post .date-container {
+  height: 240px;
+  width: 81px;
+}
+.blog .blogContainer .postContainer .blog-post .date-container .date-box {
+  height: 60px;
+  width: 60px;
+  background-color: #EE4367;
+}
+.blog .blogContainer .postContainer .blog-post .date-container .date-box .date-day {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: GillSans;
+  font-size: 22px;
+  padding-top: 10px;
+}
+.blog .blogContainer .postContainer .blog-post .date-container .date-box .date-month {
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: GillSans;
+}
+.blog .blogContainer .postContainer .blog-post .content-container {
+  height: 240px;
+  width: 800px;
+  margin-left: 10px;
+}
+.blog .blogContainer .postContainer .blog-post .content-container .post-image {
+  height: 120px;
+  width: 320px;
+  background-image: url(../images/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.blog .blogContainer .postContainer .blog-post .content-container .post-title {
+  height: 55px;
+  width: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.blog .blogContainer .postContainer .blog-post .content-container .post-title p {
+  font-size: 15px;
+  font-family: GillSans;
+}
+.blog .blogContainer .postContainer .blog-post .content-container .post-content {
+  height: 70px;
+  width: 330px;
+}
+.blog .blogContainer .postContainer .blog-post .content-container .post-content p {
+  width: 330px;
+  font-size: 13px;
+  font-family: GillSans;
+  color: #EE4367;
+}
+
+.blogPost .blog-post-hero {
+  height: 500px;
+  width: 981px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogPost .blog-post-hero .hero-image {
+  position: relative;
+  margin-top: 80px;
+  height: 300px;
+  width: 981px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(238, 67, 103, 0.6)), to(rgba(238, 67, 103, 0.6))), url(../images/blog.jpg);
+  background-image: linear-gradient(rgba(238, 67, 103, 0.6), rgba(238, 67, 103, 0.6)), url(../images/blog.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.blogPost .date-container {
+  position: absolute;
+  height: 155px;
+  width: 155px;
+  top: 220px;
+  right: 650px;
+}
+.blogPost .date-container .date-box {
+  height: 155px;
+  width: 155px;
+  background-color: #EE4367;
+}
+.blogPost .date-container .date-box .date-day {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-family: GillSans;
+  font-size: 55px;
+  padding-top: 20px;
+}
+.blogPost .date-container .date-box .date-month {
+  color: white;
+  text-align: center;
+  font-size: 31px;
+  font-family: GillSans;
+}
+.blogPost .blogPostContainer {
+  height: 500px;
+}
+.blogPost .blogPostContainer .postHeader {
+  width: 980px;
+  height: 50px;
+  margin: 0 auto;
+  color: #EE4367;
+  font-size: 20px;
+  font-family: GillSans;
+}
+.blogPost .blogPostContainer .postText {
+  font-size: 20px;
+  width: 980px;
+  height: 130px;
+  margin: 0 auto;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.blogPost .blogPostContainer .postText2 {
+  font-size: 20px;
+  width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+.blogPost .blogPostContainer .postText3 {
+  font-size: 20px;
+  width: 980px;
+  height: 90px;
+  margin: 0 auto;
+  font-family: GillSans;
+  font-style: italic;
+  line-height: 23px;
+}
+
+.contact {
+  height: 800px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .contact-container {
+  height: 550px;
+  width: 881px;
+  margin-top: 20px;
+}
+.contact .contact-container .contact-title {
+  height: 40px;
+  width: 250px;
+  font-size: 30px;
+  font-family: GillSans;
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+}
+.contact .contact-container .contact-box {
+  height: 520px;
+  width: 881px;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.contact .contact-container .contact-box .input-box {
+  height: 520px;
+  width: 481px;
+}
+.contact .contact-container .contact-box .input-box .input1 {
+  padding-bottom: 18px;
+}
+.contact .contact-container .contact-box .input-box .input1 label {
+  font-size: 18px;
+  font-family: GillSans;
+}
+.contact .contact-container .contact-box .input-box .input1 input {
+  width: 431px;
+  height: 60px;
+  border: none;
+  background-color: #F5F5F5;
+}
+.contact .contact-container .contact-box .input-box .input2 {
+  padding-bottom: 18px;
+}
+.contact .contact-container .contact-box .input-box .input2 label {
+  font-size: 18px;
+  font-family: GillSans;
+}
+.contact .contact-container .contact-box .input-box .input2 input {
+  width: 431px;
+  height: 60px;
+  border: none;
+  background-color: #F5F5F5;
+}
+.contact .contact-container .contact-box .input-box .input3 {
+  padding-bottom: 18px;
+}
+.contact .contact-container .contact-box .input-box .input3 label {
+  font-size: 18px;
+  font-family: GillSans;
+}
+.contact .contact-container .contact-box .input-box .input3 input {
+  width: 431px;
+  height: 60px;
+  border: none;
+  background-color: #F5F5F5;
+}
+.contact .contact-container .contact-box .input-box .input4 {
+  padding-bottom: 18px;
+}
+.contact .contact-container .contact-box .input-box .input4 label {
+  font-size: 18px;
+  font-family: GillSans;
+}
+.contact .contact-container .contact-box .input-box .input4 input {
+  width: 431px;
+  height: 210px;
+  border: none;
+  background-color: #F5F5F5;
+}
+.contact .contact-container .contact-box .input-box .message-button {
+  height: 50px;
+  width: 167px;
+  background-color: #EE4367;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.contact .contact-container .contact-box .input-box .message-button .send-message {
+  color: white;
+  font-family: GillSans;
+  font-size: 16px;
+}
+.contact .contact-container .contact-box .map-box {
+  height: 520px;
+  width: 400px;
+}
+.contact .contact-container .contact-box .map-box .map-image {
+  height: 442px;
+  width: 400px;
+  background-image: url(../images/map.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+footer {
+  height: 455px;
+  width: 100%;
+  background-color: #EE4367;
+  padding: 40px;
+}
+footer .logo {
+  width: 92px;
+  height: 42px;
+  margin: 0 auto;
+  background-image: url(/images/logo/logo-white.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .address {
+  height: 110px;
+  width: 280px;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  line-height: 23px;
+  font-family: GillSans;
+}
+footer .subscribe {
+  height: 60px;
+  width: 700px;
+  background-color: antiquewhite;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .subscribe .subInput input {
+  height: 60px;
+  width: 533px;
+  background-color: #F56B88;
+  border: none;
+}
+footer .subscribe .subButton {
+  height: 58px;
+  width: 167px;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+footer .subscribe .subButton .sub {
+  color: #EE4367;
+  font-family: GillSans;
+}
+footer .socialMedia {
+  height: 50px;
+  width: 300px;
+  margin: 0 auto;
+  background-color: aliceblue;
+  margin-top: 30px;
+  background-image: url(/images/social-media/icons.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+footer .copyright {
+  height: 20px;
+  width: 210px;
+  margin: 0 auto;
+  margin-top: 30px;
+  color: #FFFFFF;
+  font-family: GillSans;
+  font-size: 12px;
+}

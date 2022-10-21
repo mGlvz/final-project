@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+.site-container {
+    max-width:1100px;
+    min-height: 500px;
+    // background-color: aquamarine;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(../css/fonts/GillSans.ttc);
+}
+@font-face {
+    font-family: PTS_B;
+    src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+@font-face {
+    font-family: PTS_BI;
+    src: url(../css/fonts/PTSerif-BoldItalic.ttf);
+}
+@font-face {
+    font-family: PTS_I;
+    src: url(../css/fonts/PTSerif-Italic.ttf);
+}
+@font-face {
+    font-family: PTS_R;
+    src: url(../css/fonts/PTSerif-Regular.ttf);
+}

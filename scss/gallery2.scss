@@ -1,0 +1,76 @@
+.gallery2 {
+    .about-hero {
+        height:500px;
+        width: 981px;
+        // background-color: antiquewhite;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .hero-image{
+            position: relative;
+            margin-top: 80px;
+            height:380px;
+            width: 981px;
+            background-image: linear-gradient(rgba(238,67,103,.7),rgba(238,67,103,.7)),url(../images/gallery/2.jpeg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            margin-top: 170px; 
+        }
+        
+    }
+    .galleryTitle{
+        position: absolute;
+        // background-color: aliceblue;
+        display: flex;
+        align-items: flex-end;
+        top: 250px;
+        right: 311px;
+        .titleNumber{
+            // background-color: aqua;
+            width: 215px;
+            height: 275px;
+            font-size: 300px;
+            font-family: GillSans;
+            color:#EE4367;
+        }
+        .titleWords{
+            // background-color: aquamarine;
+            height: 130px;
+            width: 684px;
+            font-size: 140px;
+            font-family: GillSans;
+            color:#EE4367;
+        }
+    }
+    
+    .aboutContainer{
+        height: 200px;
+        width:981px;
+        // background-color: aquamarine;
+        display: flex;
+        justify-content: space-between;
+        margin:0 auto;
+        margin-top: 80px;
+        .aboutText{
+            // background-color: antiquewhite;
+            width: 460px;
+            height: 69px;
+            font-family: GillSans;
+            font-style: italic;
+            line-height: 23px;
+        }
+        .aboutText2{
+            // background-color: antiquewhite;
+            width: 450px;
+            height: 69px;
+            font-family: GillSans;
+            font-style: italic;
+            line-height: 23px;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.blogPost {
+    .blog-post-hero {
+        height:500px;
+        width: 981px;
+        // background-color: antiquewhite;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .hero-image{
+            position: relative;
+            margin-top: 80px;
+            height:300px;
+            width: 981px;
+            background-image: linear-gradient(rgba(238,67,103,.6),rgba(238,67,103,.6)),url(../images/blog.jpg);
+            background-repeat: no-repeat;
+            background-position:center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    .date-container{
+        position: absolute;
+        height: 155px;
+        width: 155px;
+        top:220px;
+        right: 650px;
+        // background-color: aquamarine;
+        .date-box{
+            height: 155px;
+            width: 155px;
+            background-color: #EE4367;
+            .date-day{
+                color: white;
+                text-align: center;
+                font-weight: bold;
+                font-family: GillSans;
+                font-size: 55px;
+                padding-top: 20px;
+                // background-color: black;
+            }
+            .date-month{
+                color: white;
+                text-align: center;
+                font-size: 31px;
+                font-family: GillSans;
+                // background-color: cadetblue;
+            }
+        }
+    }
+    .blogPostContainer{
+        height: 500px;
+        // background-color: aqua;
+        .postHeader{
+            width: 980px;
+            height: 50px;
+            margin: 0 auto;
+            color: #EE4367;
+            font-size: 20px;
+            font-family: GillSans;
+            // background-color: blueviolet;
+        }
+        .postText{
+            font-size: 20px;
+            width: 980px;
+            height: 130px;
+            margin: 0 auto;
+            font-family: GillSans;
+            font-style: italic;
+            line-height: 23px;
+            // background-color: bisque;
+        }
+        .postText2{
+            font-size: 20px;
+            width: 980px;
+            height: 90px;
+            margin: 0 auto;
+            font-family: GillSans;
+            font-style: italic;
+            line-height: 23px;
+            // background-color:cornflowerblue;
+        }
+        .postText3{
+            font-size: 20px;
+            width: 980px;
+            height: 90px;
+            margin: 0 auto;
+            font-family: GillSans;
+            font-style: italic;
+            line-height: 23px;
+            // background-color:cornflowerblue;
+        }
+    }
+}

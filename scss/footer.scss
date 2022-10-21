@@ -1,0 +1,78 @@
+footer{
+    height: 455px;
+    width: 100%;
+    background-color: #EE4367;
+    padding: 40px;
+    .logo{
+        width: 92px;
+        height: 42px;
+        margin: 0 auto;
+        background-image: url(/images/logo/logo-white.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+
+    }
+    .address{
+        height: 110px;
+        width: 280px;
+        margin: 0 auto;
+        // background-color: black;
+        color: white;
+        text-align: center;
+        margin-top: 50px;
+        line-height: 23px;
+        font-family: GillSans;
+    }
+    .subscribe{
+        height: 60px;
+        width: 700px;
+        background-color: antiquewhite;
+        margin: 0 auto;
+        display: flex;
+        .subInput{
+            // height: 60px;
+            // width: 533px;
+            input{
+                height: 60px;
+                width: 533px;
+                background-color: #F56B88;
+                border: none;
+            }
+        }
+        .subButton{
+            height: 58px;
+            width:167px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .sub{
+                color:#EE4367;
+                font-family: GillSans;
+            }
+        }
+    }
+    .socialMedia{
+        height: 50px;
+        width: 300px;
+        margin: 0 auto;
+        background-color: aliceblue;
+        margin-top: 30px;
+        background-image: url(/images/social-media/icons.png);
+        background-repeat: no-repeat;
+        background-position:center;
+        background-size: cover;
+
+    }
+    .copyright{
+        height: 20px;
+        width: 210px;
+        margin: 0 auto;
+        margin-top: 30px;
+        // background-color: brown;
+        color: #FFFFFF;
+        font-family: GillSans;
+        font-size: 12px;
+    }
+}
